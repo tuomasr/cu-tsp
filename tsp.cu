@@ -100,8 +100,6 @@ __global__ void TwoOpt(int cities, float *posx, float *posy, float *px, float *p
 
               change = dist(a,c) - dist(c,d) + dist(b,d) - Dab;
               if (change < minchange) {
-                  //printf("change: %d \n", change);
-                  //printf("minchange: %d \n", minchange);
                   minchange = change;
                   mini = i;
                   minj = j;
